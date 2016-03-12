@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "startRestWS": "node restServer.js",
+    "startSoapWS": "node soapServer.js",
+    "startSoapClient": "node soapClient.js",
+    "testRestWS": "mocha restClientTest.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +19,15 @@
     "url": "https://github.com/szdominik/NodeJs-WSBasics/issues"
   },
   "dependencies": {
-    "node-mysql": "~0.4.2"
+    "body-parser": "~1.15.0",
+    "express": "~4.13.4",
+    "mysql": "~2.10.2",
+    "soap": "~0.13.0"
+  },
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "mocha": "~2.4.5",
+    "supertest": "~1.2.0",
+    "sinon": "~1.17.3"
   }
 }
