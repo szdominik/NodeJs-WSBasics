@@ -3,7 +3,7 @@
 How to use
 ----------
 
-1. using three .sql files - for the database (testuser and NO password with a database 'webtech').
+1. run the three .sql files for the database initialization (database: ```webtech```, username: ```testuser```, NO password).
 2. the RESTful Web Service
   1. ```npm run testRestWS```-> testing the RESTful Web Service
   2. ```npm run startRestWS``` and after ```http://localhost:3000/products``` -> launch the WS and showing the result in the browser
